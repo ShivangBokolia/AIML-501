@@ -24,24 +24,26 @@ const NetworkDiagram = () => (
         aria-label="Neural network diagram: input layer, two hidden layers and an output layer, with every neuron connected to every neuron in the next layer"
     >
         {/* Weights: every neuron connects to every neuron in the next layer */}
-        {architecture.slice(0, -1).map((layer, li) =>
-            Array.from({ length: layer.count }).flatMap((_, a) =>
-                Array.from({ length: architecture[li + 1].count }).map(
-                    (_, b) => (
-                        <line
-                            key={`${li}-${a}-${b}`}
-                            x1={COL_X[li]}
-                            y1={nodeY(layer.count, a)}
-                            x2={COL_X[li + 1]}
-                            y2={nodeY(architecture[li + 1].count, b)}
-                            stroke={(a + b) % 2 ? "#4eb1bc" : "#d5573b"}
-                            strokeOpacity="0.45"
-                            strokeWidth={1 + ((a * 3 + b * 2) % 3)}
-                        />
+        {architecture
+            .slice(0, -1)
+            .map((layer, li) =>
+                Array.from({ length: layer.count }).flatMap((_, a) =>
+                    Array.from({ length: architecture[li + 1].count }).map(
+                        (_, b) => (
+                            <line
+                                key={`${li}-${a}-${b}`}
+                                x1={COL_X[li]}
+                                y1={nodeY(layer.count, a)}
+                                x2={COL_X[li + 1]}
+                                y2={nodeY(architecture[li + 1].count, b)}
+                                stroke={(a + b) % 2 ? "#4eb1bc" : "#d5573b"}
+                                strokeOpacity="0.45"
+                                strokeWidth={1 + ((a * 3 + b * 2) % 3)}
+                            />
+                        ),
                     ),
                 ),
-            ),
-        )}
+            )}
         {/* Neurons */}
         {architecture.map((layer, li) =>
             Array.from({ length: layer.count }).map((_, i) => (
@@ -87,7 +89,7 @@ const NeuralNetworkScreen = () => {
                         Artifact 2
                     </span>
                     <h2 className="text-3xl md:text-5xl font-bold leading-tight">
-                        Inside a Neural Network
+                        Visualizing a Neural Network
                     </h2>
                     <p className="text-nav max-w-2xl">
                         A visual walkthrough of the six building blocks of a
@@ -185,7 +187,7 @@ const NeuralNetworkScreen = () => {
                     <section className="flex flex-col gap-6">
                         <div>
                             <h3 className="text-2xl font-bold text-white">
-                                3. The six components
+                                3. Components
                             </h3>
                             <p className="text-nav">
                                 Each card defines the component, explains its
@@ -198,7 +200,9 @@ const NeuralNetworkScreen = () => {
                                 <div
                                     key={c.name}
                                     className="rounded-2xl p-5 bg-white/10 border border-white/30 flex flex-col gap-3"
-                                    style={{ borderTop: `4px solid ${c.color}` }}
+                                    style={{
+                                        borderTop: `4px solid ${c.color}`,
+                                    }}
                                 >
                                     <h4
                                         className="text-xl font-bold"
@@ -242,14 +246,14 @@ const NeuralNetworkScreen = () => {
                                     Why visualize neural networks?
                                 </h4>
                                 <p className="text-white mt-2">
-                                    A neural network is easy to treat as a
-                                    black box. Visualizing it turns abstract
-                                    ideas like weights, activations and loss
-                                    into things you can see change. It makes
-                                    the concepts easier to learn, helps you
-                                    spot problems such as overfitting early,
-                                    and makes the model easier to explain to
-                                    people who are not technical.
+                                    A neural network is easy to treat as a black
+                                    box. Visualizing it turns abstract ideas
+                                    like weights, activations and loss into
+                                    things you can see change. It makes the
+                                    concepts easier to learn, helps you spot
+                                    problems such as overfitting early, and
+                                    makes the model easier to explain to people
+                                    who are not technical.
                                 </p>
                             </div>
                             <div>
