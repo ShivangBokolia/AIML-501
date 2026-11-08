@@ -241,6 +241,13 @@ const artifacts = [
         in_page_link: "artifactOne",
         image: ML_DL,
     },
+    {
+        name: "Inside a Neural Network",
+        definition:
+            "A visual walkthrough of neural network architecture and its six core components (layers, neurons, weights, activation functions, loss functions and optimization algorithms), built from experimenting with the TensorFlow Playground.",
+        in_page_link: "artifactTwo",
+        image: Code_Image,
+    },
 ];
 
 const projects = [

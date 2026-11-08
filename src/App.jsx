@@ -6,6 +6,7 @@ import ContactScreen from "./pages/ContactScreen";
 import { useEffect } from "react";
 import NotFoundPage from "./pages/NotFoundPage";
 import AlgorithmFrameworkScreen from "./pages/AlgorithmFrameworkScreen";
+import NeuralNetworkScreen from "./pages/NeuralNetworkScreen";
 
 function App() {
     useEffect(() => {
@@ -28,6 +29,7 @@ function App() {
                     path="/artifactOne"
                     element={<AlgorithmFrameworkScreen />}
                 />
+                <Route path="/artifactTwo" element={<NeuralNetworkScreen />} />
                 <Route path="/*" element={<NotFoundPage />} />
             </Routes>
         </HashRouter>
