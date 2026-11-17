@@ -6,6 +6,7 @@ import {
     Code_Image,
     Timeline_Tag,
     ML_DL,
+    LLM,
     Challenges,
     Commercial,
 } from "../assets";
@@ -247,6 +248,13 @@ const artifacts = [
             "A visual walkthrough of neural network architecture and its six core components (layers, neurons, weights, activation functions, loss functions and optimization algorithms), built from experimenting with the TensorFlow Playground.",
         in_page_link: "artifactTwo",
         image: Code_Image,
+    },
+    {
+        name: "How an LLM Is Trained",
+        definition:
+            "An infographic following a generative AI model from data collection to deployment, with the data, compute, energy and time it consumes, and published training figures for GPT-3, GPT-4, Llama 2, Llama 3.1, Gemini Ultra and Claude.",
+        in_page_link: "artifactThree",
+        image: LLM,
     },
 ];
 

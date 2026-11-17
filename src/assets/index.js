@@ -26,6 +26,7 @@ import CoursePilot from "./images/CoursePilot.png";
 import Timeline from "./images/Timeline.png";
 import Timeline_Tag from "./images/Timeline_project_tag.png";
 import ML_DL from "./images/ML_DL.png";
+import LLM from "./images/LLM.jpg";
 import Challenges from "./images/Challenges.png";
 import Commercial from "./images/Commercial.png";
 
@@ -51,6 +52,7 @@ export {
     Timeline,
     Timeline_Tag,
     ML_DL,
+    LLM,
     Challenges,
     Commercial,
 };

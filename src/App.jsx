@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import NotFoundPage from "./pages/NotFoundPage";
 import AlgorithmFrameworkScreen from "./pages/AlgorithmFrameworkScreen";
 import NeuralNetworkScreen from "./pages/NeuralNetworkScreen";
+import LLMTrainingScreen from "./pages/LLMTrainingScreen";
 
 function App() {
     useEffect(() => {
@@ -30,6 +31,7 @@ function App() {
                     element={<AlgorithmFrameworkScreen />}
                 />
                 <Route path="/artifactTwo" element={<NeuralNetworkScreen />} />
+                <Route path="/artifactThree" element={<LLMTrainingScreen />} />
                 <Route path="/*" element={<NotFoundPage />} />
             </Routes>
         </HashRouter>
