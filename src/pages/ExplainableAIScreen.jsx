@@ -105,7 +105,7 @@ const ExplainableAIScreen = () => {
                         Artifact 4
                     </span>
                     <h2 className="text-3xl md:text-5xl font-bold leading-tight">
-                        Explainable AI: Why We Need to See Inside the Black Box
+                        Explainable AI
                     </h2>
                     <p className="text-nav max-w-2xl">
                         An infographic on what explainable AI is, why it is hard
