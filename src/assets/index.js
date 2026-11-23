@@ -28,6 +28,7 @@ import Timeline_Tag from "./images/Timeline_project_tag.png";
 import ML_DL from "./images/ML_DL.png";
 import LLM from "./images/LLM.jpg";
 import Challenges from "./images/Challenges.png";
+import Explainable_AI from "./images/explanable_AI.png";
 import Commercial from "./images/Commercial.png";
 
 export {
@@ -54,5 +55,6 @@ export {
     ML_DL,
     LLM,
     Challenges,
+    Explainable_AI,
     Commercial,
 };

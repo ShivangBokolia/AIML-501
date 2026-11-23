@@ -7,7 +7,7 @@ import {
     Timeline_Tag,
     ML_DL,
     LLM,
-    Challenges,
+    Explainable_AI,
     Commercial,
 } from "../assets";
 
@@ -255,6 +255,13 @@ const artifacts = [
             "An infographic following a generative AI model from data collection to deployment, with the data, compute, energy and time it consumes, and published training figures for GPT-3, GPT-4, Llama 2, Llama 3.1, Gemini Ultra and Claude.",
         in_page_link: "artifactThree",
         image: LLM,
+    },
+    {
+        name: "Explainable AI: Inside the Black Box",
+        definition:
+            "An infographic on explainable AI: what it is and why it matters, the challenges of explaining models like GPT, Claude, Gemini and Llama, the techniques leading AI labs use to open them up, and how validation and performance metrics build trust.",
+        in_page_link: "artifactFour",
+        image: Explainable_AI,
     },
 ];
 
